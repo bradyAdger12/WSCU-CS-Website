@@ -28,7 +28,7 @@ nav ul li a:hover {
 }
 #header {
     color: white;
-    margin-left: 36%;
+    margin-left: 35%;
     font-size: 250%;
 }
 .table {
@@ -58,4 +58,14 @@ nav ul li a:hover {
     width: 1%;
     padding-left: 12%;
     border: solid black;
+}
+.account_info_outline {
+    border: solid white;
+    background-color: red;
+    margin-left: 35%;
+    width: 35%;
+}
+#account_info {
+    color: white;
+    font-size: 150%;
 }

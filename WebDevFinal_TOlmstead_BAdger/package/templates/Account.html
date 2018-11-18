@@ -2,3 +2,12 @@
 {% block account_style %}
     <link href="../static/css/AccountStyle.css" rel="stylesheet" type="text/css">
 {% endblock account_style %}
+{% block account_content %}
+    <h1 id="header">Account for {{ current_user.firstname }} {{ current_user.lastname }}</h1>
+    <div class="account_info_outline">
+        <p id="account_info" align="center">First Name: {{ current_user.firstname }}</p>
+        <p id="account_info" align="center">Last Name:  {{ current_user.lastname }}</p>
+        <p id="account_info" align="center">Username:   {{ current_user.username }}</p>
+        <p id="account_info" align="center">Email:      {{ current_user.email }}</p>
+    </div>
+{% endblock account_content %}
