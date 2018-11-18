@@ -43,3 +43,7 @@ class FormUpdateAccount(FlaskForm):
             user = User.query.filter_by(email=email.data).first()
             if user:
                 raise ValidationError('Email is already taken!')
+
+
+class FormDeleteAccount(FlaskForm):
+    submit = SubmitField('Delete Account')

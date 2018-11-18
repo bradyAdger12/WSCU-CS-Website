@@ -43,7 +43,9 @@
     </div>
     <div class="account_info_outline">
         <form action="" class="form" method="post">
-
+            {{ delete_form.hidden_tag() }}
+            <label id="delete_form_label">{{ delete_form.submit.label }}</label><br>
+            {{ delete_form.submit }}
         </form>
     </div>
 {% endblock account_content %}

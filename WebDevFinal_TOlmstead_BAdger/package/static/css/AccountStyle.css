@@ -78,6 +78,11 @@ nav ul li a:hover {
     font-size: 150%;
     margin-left: 25%;
 }
+#delete_form_label {
+    color: white;
+    font-size: 150%;
+    margin-left: 32.5%;
+}
 .invalid-feedback {
     color: black;
 }

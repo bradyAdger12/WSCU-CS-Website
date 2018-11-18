@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07a541d-0f32-4e56-bf81-846fb756a764" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package/AccountForms.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/AccountForms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/package/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/routes/route.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/routes/route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/static/css/CssLanguages/C++.css" beforeDir="false" afterPath="$PROJECT_DIR$/package/static/css/CssLanguages/C++.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/static/css/AccountStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/package/static/css/AccountStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/templates/Account.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Account.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,30 +75,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="35" />
+          <entry key="css" value="36" />
           <entry key="html" value="30" />
-          <entry key="py" value="17" />
+          <entry key="py" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="35" />
+          <entry key="CSS" value="36" />
           <entry key="HTML" value="30" />
-          <entry key="Python" value="17" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="872" />
-          <entry key="html" value="5547" />
-          <entry key="py" value="4461" />
+          <entry key="css" value="883" />
+          <entry key="html" value="5613" />
+          <entry key="py" value="4740" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="872" />
-          <entry key="HTML" value="5547" />
-          <entry key="Python" value="4461" />
+          <entry key="CSS" value="883" />
+          <entry key="HTML" value="5613" />
+          <entry key="Python" value="4740" />
         </counts>
       </usages-collector>
     </session>
@@ -106,12 +108,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package/routes/route.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+            <state relative-caret-position="330">
+              <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1542550297605" expanded="true" signature="1965:2023" ph="..." />
-                <marker date="1542550297605" expanded="true" signature="2095:2100" ph="..." />
+                <marker date="1542560358746" expanded="true" signature="1984:2042" ph="..." />
+                <marker date="1542560358746" expanded="true" signature="2114:2119" ph="..." />
+                <marker date="1542560358746" expanded="true" signature="2721:2725" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package/static/css/AccountStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package/database_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+                <marker date="1542507444620" expanded="true" signature="123:128" ph="..." />
+                <marker date="1542507444620" expanded="true" signature="197:202" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,8 +146,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package/templates/Account.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            <state relative-caret-position="390">
+              <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package/AccountForms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1542559627163" expanded="true" signature="304:309" ph="..." />
+                <marker date="1542559627163" expanded="true" signature="1291:2372" ph="..." />
+                <marker date="1542559627163" expanded="true" signature="1576:2372" ph="..." />
+                <marker date="1542559627163" expanded="true" signature="2328:2372" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,19 +208,19 @@
         <option value="$PROJECT_DIR$/package/templates/Languages/HTML.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Java.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/JavaScript.html" />
-        <option value="$PROJECT_DIR$/package/AccountForms.py" />
         <option value="$PROJECT_DIR$/package/static/css/ParentTemplateStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/LoginAccountStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/CreateAccountStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/HomePageStyle.css" />
-        <option value="$PROJECT_DIR$/package/static/css/AccountStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/PythonStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/JavaStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/JavaScriptStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/html_style.css" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/C_SharpStyle.css" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/C++.css" />
+        <option value="$PROJECT_DIR$/package/AccountForms.py" />
         <option value="$PROJECT_DIR$/package/routes/route.py" />
+        <option value="$PROJECT_DIR$/package/static/css/AccountStyle.css" />
         <option value="$PROJECT_DIR$/package/templates/Account.html" />
       </list>
     </option>
@@ -219,6 +261,19 @@
               <item name="WebDevFinal_TOlmstead_BAdger" type="462c0819:PsiDirectoryNode" />
               <item name="package" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevFinal_TOlmstead_BAdger" type="462c0819:PsiDirectoryNode" />
+              <item name="package" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevFinal_TOlmstead_BAdger" type="462c0819:PsiDirectoryNode" />
+              <item name="package" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
@@ -315,7 +370,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -354,18 +409,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package/database_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-            <marker date="1542507444620" expanded="true" signature="123:128" ph="..." />
-            <marker date="1542507444620" expanded="true" signature="197:202" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/WebDevFinal_TOlmstead_BAdger/lib/python3.7/site-packages/flask/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -500,19 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package/AccountForms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1542525408597" expanded="true" signature="304:309" ph="..." />
-            <marker date="1542525408597" expanded="true" signature="1291:2291" ph="..." />
-            <marker date="1542525408597" expanded="true" signature="1576:2291" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package/templates/ParentTemplateHomePage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -545,13 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package/static/css/AccountStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -597,22 +620,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package/database_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1542507444620" expanded="true" signature="123:128" ph="..." />
+            <marker date="1542507444620" expanded="true" signature="197:202" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/AccountForms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1542559627163" expanded="true" signature="304:309" ph="..." />
+            <marker date="1542559627163" expanded="true" signature="1291:2372" ph="..." />
+            <marker date="1542559627163" expanded="true" signature="1576:2372" ph="..." />
+            <marker date="1542559627163" expanded="true" signature="2328:2372" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package/routes/route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+        <state relative-caret-position="330">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1542550297605" expanded="true" signature="1965:2023" ph="..." />
-            <marker date="1542550297605" expanded="true" signature="2095:2100" ph="..." />
+            <marker date="1542560358746" expanded="true" signature="1984:2042" ph="..." />
+            <marker date="1542560358746" expanded="true" signature="2114:2119" ph="..." />
+            <marker date="1542560358746" expanded="true" signature="2721:2725" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/static/css/AccountStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package/templates/Account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        <state relative-caret-position="390">
+          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
         </state>
       </provider>
     </entry>

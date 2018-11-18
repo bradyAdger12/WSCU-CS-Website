@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
-from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount
+from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount, FormDeleteAccount
 from package import app
 from package import bcrypt
 from package import db
@@ -58,10 +58,19 @@ def home():
 @app.route('/account', methods=['GET', 'POST'])
 def account():
     form = FormUpdateAccount()
+    delete_form = FormDeleteAccount()
     if form.validate_on_submit():
         current_user.username = form.username.data
         current_user.email = form.email.data
         db.session.commit()
         return redirect(url_for('account'))
-    return render_template('Account.html', form=form)
+    if delete_form.validate_on_submit():
+        db.session.delete(current_user)
+        db.session.commit()
+        return redirect(url_for('login'))
+    return render_template('Account.html', form=form, delete_form=delete_form)
+
+
+
+
 
