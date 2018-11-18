@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, send_from_directory
+from flask import Flask, render_template, redirect, url_for
 from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount
 from package import app
 from package import bcrypt
@@ -8,8 +8,9 @@ from flask_login import login_user, current_user, logout_user, login_required
 
 @app.route('/create_account', methods=['GET', 'POST'])
 def create_account():
-    #if current_user.is_authenticated():
-    #    return redirect(url_for('home'))
+    if current_user.is_authenticated:
+        print("Authenticated")
+        return redirect(url_for('home'))
     form = FormCreateAccount()
     #print("Test")
     if form.validate_on_submit():
@@ -28,8 +29,9 @@ def create_account():
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    #if current_user.is_authenticated():
-    #    return redirect(url_for('home'))
+    if current_user.is_authenticated:
+        print("Authenticated")
+        return redirect(url_for('home'))
     form = FormLogin()
     if form.validate_on_submit():
         print("Login Successful!")
