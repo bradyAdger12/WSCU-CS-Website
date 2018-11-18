@@ -17,14 +17,17 @@ nav ul li {
 nav ul li a:link {
     font-size: 150%;
     color: black;
+    text-decoration: none;
 }
 nav ul li a:visited {
     font-size: 150%;
     color: black;
+
 }
 nav ul li a:hover {
     font-size: 150%;
     color: red;
+
 }
 #header {
     color: white;

@@ -38,6 +38,8 @@ def login():
         if user and check_password:
             login_user(user, form.remember_me.data)
             return redirect(url_for('home'))
+        else:
+            print("Unsuccessful login check email and password.")
     return render_template("LoginAccount.html", form=form)
 
 @app.route('/logout')

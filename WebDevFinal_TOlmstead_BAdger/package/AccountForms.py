@@ -24,9 +24,10 @@ class FormCreateAccount(FlaskForm):
 
 class FormLogin(FlaskForm):
     email = StringField('Email: ', validators=[DataRequired(), Email()])
-    password = PasswordField('Password: ', validators=[DataRequired()])
+    password = PasswordField('Password: ', validators=[DataRequired(Length(min=8,max=25))])
     remember_me = BooleanField('Remember Me: ')
     submit = SubmitField('Login')
+
 
 class FormUpdateAccount(FlaskForm):
     email = StringField('Update Email: ', validators=[DataRequired(Length(max=25)), Email()])
