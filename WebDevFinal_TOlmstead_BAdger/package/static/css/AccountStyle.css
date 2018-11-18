@@ -44,19 +44,19 @@ nav ul li a:hover {
 .link1 {
     display: table-cell;
     width: 1%;
-    padding-left: 12%;
+    padding-left: 6%;
     border: solid black;
 }
 .link2 {
     display: table-cell;
     width: 1%;
-    padding-left: 12%;
+    padding-left: 6%;
     border: solid black;
 }
 .link3 {
     display: table-cell;
     width: 1%;
-    padding-left: 12%;
+    padding-left: 6%;
     border: solid black;
 }
 .account_info_outline {
@@ -93,4 +93,46 @@ input[type=text] {
 input[type=submit] {
     margin-left: 37%;
     font-size: 100%;
+}
+
+.dropdown {
+    display: table-cell;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    font-size: 150%;
+    width: 1%;
+    padding-left: 6%;
+    border: solid black;
+}
+.dropdown .dropbtn {
+    background-color: white;
+    font-family: Serif;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 100%;
+}
+.dropdown-links {
+    background-color: white;
+    color: black;
+    display: none;
+    /*margin-right: 20%;*/
+    margin-left: -23%;
+    padding-left: -7%;
+}
+.dropdown-links a {
+    display: block;
+    background-color: white;
+    color: black;
+    font-size: 100%;
+    text-align: left;
+}
+.dropdown-links a:hover {
+    color: white;
+    background-color: red;
+}
+.dropdown:hover .dropdown-links {
+    display: block;
+    color: red;
 }

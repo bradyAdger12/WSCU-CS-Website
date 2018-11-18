@@ -12,4 +12,4 @@ bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-from package.routes import route
+from package.routes import route, language_routes

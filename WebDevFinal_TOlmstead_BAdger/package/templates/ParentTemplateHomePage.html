@@ -5,6 +5,7 @@
     <title>Home Page</title>
     {% block home_style %}{% endblock %}
     {% block account_style %}{% endblock %}
+    {% block languages_style %}{% endblock %}
 </head>
 <body>
     <nav>
@@ -13,6 +14,17 @@
                 <div class="row">
                     <div class="link1">
                         <li><a href="{{ url_for('home') }}">Home</a> </li>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Languages<i class="fa fa caret-down"></i> </button>
+                        <div class="dropdown-links">
+                            <li><a href="{{ url_for('python') }}">Python</a> </li>
+                            <li><a href="{{ url_for('java') }}">Java</a> </li>
+                            <li><a href="{{ url_for('html') }}">HTML</a> </li>
+                            <li><a href="{{ url_for('javascript') }}">JavaScript</a> </li>
+                            <li><a href="{{ url_for('c_plus_plus') }}">C++</a> </li>
+                            <li><a href="{{ url_for('c_sharp') }}">C#</a> </li>
+                        </div>
                     </div>
                     <div class="link3">
                         <li><a href="{{ url_for('account') }}">Account</a> </li>
@@ -28,5 +40,6 @@
     {% block account_header %}{% endblock account_header %}
 
     {% block account_content %}{% endblock %}
+    {% block languages_content %}{% endblock %}
 </body>
 </html>
