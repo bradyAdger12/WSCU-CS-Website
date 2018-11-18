@@ -1,1 +1,39 @@
 {% extends "ParentAccounts.html" %}
+{% block login_account_style %}
+    <link rel="stylesheet" type="text/css" href="../static/css/LoginAccountStyle.css">
+{% endblock login_account_style %}
+{% block account_login %}
+    <div class="form_div">
+        <form class="form" action="" method="post">
+            {{ form.hidden_tag() }}
+            <legend id="form_legend">Login</legend>
+            <label id="form_label">{{ form.email.label }}</label>
+            {% if form.email.errors %}
+                {{ form.email(class="invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                        {{ error }}
+                    {% endfor %}<!-- for loop email errors -->
+                </div>
+            {% else %}
+                {{ form.email(class="email") }}
+            {% endif %}<!-- if statement email errors
+            <!-- Email Login -->
+            <label id="form_label">{{ form.password.label }}</label>
+            {% if form.password.errors %}
+                {{ form.password(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                        {{ error }}
+                    {% endfor %}<!--  for loop password errors  -->
+                </div>
+            {% else %}
+                {{ form.password }}
+            {% endif %}<!--  if statement password errors  -->
+            <!-- Password Login -->
+            <label id="form_label">{{ form.remember_me.label }}</label>
+            {{ form.remember_me }}
+            {{ form.submit }}
+        </form>
+    </div>
+{% endblock account_login %}

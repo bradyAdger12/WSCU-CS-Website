@@ -1,0 +1,117 @@
+/*
+Web Dev Final
+Travis Olmstead and Brady Adger
+Style sheet for account html pages
+ */
+body {
+    background-color: red;
+}
+nav {
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-top: -1.11%;
+    background-color: white;/*  Set background of nav bar to white  */
+    color: black;/*  Color of text inside nav bar is black.  */
+}
+nav ul {
+    list-style-type: none; /*  No bullet points in horizantal list  */
+}
+nav ul li {
+    display: inline;/*  Displays table horizantally  */
+}
+nav ul li a:link {
+    font-size: 150%;
+    color: black;
+}
+nav ul li a:visited {
+    font-size: 150%;
+    color: black;
+}
+nav ul li a:hover {
+    font-size: 150%;
+    color: red;
+}
+.table {
+    margin-left: -2%;
+    margin-right: -2%;
+    width: 44%;
+    margin-left: 28%;
+    display: table;
+}
+.row {
+    display: table-row;
+}
+.link1 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 14%;
+    border: solid black;
+}
+.link2 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 21%;
+    border: solid black;
+}
+.form_div {
+    background-color: red;
+    border: solid white;
+    margin-top: 2.5%;/*  shift div down  */
+    width: 45%;
+    margin-left: 28.5%;/*  shift div left  */
+}/*  div element surrounding form  */
+#form_label {
+    margin-left: 30%;
+    color: white;
+    font-size: 150%;
+}
+.invalid-feedback {
+    margin-left: 30%;
+    color: black;
+}
+#form_legend {
+    margin-left: 42%;
+    color: white;
+    font-size: 225%;
+}
+input[type=submit] {
+    width: 20%;
+    font-size: 175%;
+    height: 35%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 40%;
+}
+input[type=email] {
+    background-color: black;
+    border: solid white;
+    color: white;
+    width: 40%;
+    font-size: 150%;
+    margin-left: 30%;/* Increases space between "Enter your name" and input field. */
+}
+input[type=text] {
+    background-color: black;
+    border: solid white;
+    color: white;
+    width: 40%;
+    font-size: 150%;
+    margin-left: 30%;
+}
+input[type=password] {
+    background-color: black;
+    border: solid white;
+    color: white;
+    width: 40%;
+    font-size: 150%;
+    margin-left: 30%;/* Increases space between "Enter your name" and input field. */
+}
+
+/*#input_password {
+    background-color: black;
+    border: solid white;
+    color: white;
+    width: 40%;
+    font-size: 150%;
+    margin-left: 30%;/* Increases space between "Enter your name" and input field.
+}*/

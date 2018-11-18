@@ -1,0 +1,55 @@
+body {
+    background-color: red;
+}
+nav {
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-top: -1.11%;
+    background-color: white;/*  Set background of nav bar to white  */
+    color: black;/*  Color of text inside nav bar is black.  */
+}
+nav ul {
+    list-style-type: none; /*  No bullet points in horizantal list  */
+}
+nav ul li {
+    display: inline;/*  Displays table horizantally  */
+}
+nav ul li a:link {
+    font-size: 150%;
+    color: black;
+}
+nav ul li a:visited {
+    font-size: 150%;
+    color: black;
+}
+nav ul li a:hover {
+    font-size: 150%;
+    color: red;
+}
+#header {
+    color: white;
+    margin-left: 41%;
+    font-size: 250%;
+}
+.table {
+    margin-left: -2%;
+    margin-right: -2%;
+    width: 44%;
+    margin-left: 28%;
+    display: table;
+}
+.row {
+    display: table-row;
+}
+.link1 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 14%;
+    border: solid black;
+}
+.link2 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 21%;
+    border: solid black;
+}

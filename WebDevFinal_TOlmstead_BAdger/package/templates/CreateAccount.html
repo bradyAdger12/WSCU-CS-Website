@@ -1,1 +1,89 @@
 {% extends "ParentAccounts.html" %}
+{% block create_account_style %}
+    <link rel="stylesheet" type="text/css" href="../static/css/CreateAccountStyle.css">
+{% endblock create_account_style %}
+{% block create_account %}
+    <h1 id="header">Western Coding</h1>
+    <div id="form_div">
+        <form class="form" action="" name="formCreateAccount" method="post">
+            {{ form.hidden_tag() }}
+            <legend id="form_legend">Create New Account</legend><br>
+            <label id="form_label">{{ form.firstname.label }}</label>
+            {%  if form.firstname.errors %}
+                {{ form.firstname(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.firstname.errors %}
+                        {{ error }}
+                        <!--  Cycle through the errors in firstname field in the form and display each error -->
+                    {% endfor %}
+                </div>
+                <!-- This div will prompt a red message displaying the error -->
+            {% else %}
+                {{ form.firstname }} <!-- Create First name in form -->
+            {% endif %}<!-- end if statement form.firstname.errors -->
+            <!-- First Name -->
+            <label id="form_label">{{ form.lastname.label }}</label>
+            {% if form.lastname.errors %}
+                {{ form.lastname(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.lastname.errors %}
+                        {{ error }}
+                    {% endfor %}<!-- end for loop form.lastname.errors -->
+                </div>
+            {% else %}
+                {{ form.lastname }}
+            {% endif %}<!-- end if statement form.lastname.errors -->
+            <!-- Last Name -->
+            <label id="form_label">{{ form.email.label }}</label>
+            {% if form.email.errors%}
+                {{ form.email(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                        {{ error }}
+                    {% endfor %}<!-- cycle through all the errors in form.email -->
+                </div>
+            {% else %}
+                {{ form.email }}
+            {% endif %}<!-- if statement form.email.errors -->
+            <!-- Email -->
+            <label id="form_label">{{ form.username.label }}</label>
+            {% if form.username.errors %}
+                {{ form.username(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.username.errors %}
+                        {{ error }}
+                    {% endfor %}<!-- for loop cycling through password errors -->
+                </div>
+            {% else %}
+                {{ form.username }}
+            {% endif %}<!-- if statement form.username.errors -->
+            <!-- Username -->
+            <label id="form_label">{{ form.password.label }}</label>
+            {% if form.password.errors %}
+                {{ form.password(class="input_password") }}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                        {{ error }}
+                    {% endfor %}<!--  Cycle through password errors -->
+                </div>
+            {% else %}
+                {{ form.password }}
+            {% endif %}<!--  if statement form.password.errors -->
+            <!--  Password -->
+            <label id="form_label">{{ form.confirm_password.label }}</label>
+            {% if form.confirm_password.errors %}
+                {{ form.confirm_password(class+"input_confirm_password") }}
+                <div class="invalid-feedback">
+                    {% for error in form.confirm_password.errors %}
+                        {{ error }}
+                    {% endfor %}<!-- for loop cycling through errors in confirm password -->
+                </div>
+            {% else %}
+                {{ form.confirm_password }}
+            {% endif %}<!-- if statement form.confirm_password.errors -->
+            <!-- Confirm Password -->
+            {{ form.submit }}
+            <!--  Submit -->
+        </form>
+    </div>
+{% endblock create_account %}

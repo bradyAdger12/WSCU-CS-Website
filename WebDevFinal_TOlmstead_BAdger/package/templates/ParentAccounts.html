@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Coding</title>
-    <link href="../static/StyleAccounts.css" rel="stylesheet" type="text/css">
+    {% block create_account_style %}{% endblock %}
+    {% block login_account_style %}{% endblock %}
 </head>
 <body>
     <nav>
@@ -14,11 +15,13 @@
                         <li><a href="{{ url_for('create_account') }}">Create Account</a> </li>
                     </div>
                     <div class="link2">
-                        <li><a href="{{ url_for('login_account') }}">Login</a> </li>
+                        <li><a href="{{ url_for('login') }}">Login</a> </li>
                     </div>
                 </div>
             </div>
         </ul>
     </nav>
+    {% block create_account %}{% endblock %}
+    {% block account_login %}{% endblock %}
 </body>
 </html>

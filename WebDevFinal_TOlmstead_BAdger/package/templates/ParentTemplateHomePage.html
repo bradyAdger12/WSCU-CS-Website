@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    {% block home_style %}{% endblock %}
+    {% block account_style %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="table">
+                <div class="row">
+                    <div class="link1">
+                        <li><a href="{{ url_for('home') }}">Home</a> </li>
+                    </div>
+                    <div class="link3">
+                        <li><a href="{{ url_for('account') }}">Account</a> </li>
+                    </div>
+                    <div class="link2">
+                        <li><a href="{{ url_for('logout') }}">Logout</a> </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    {% block home_header %}{% endblock home_header %}
+    {% block account_header %}{% endblock account_header %}
+</body>
+</html>

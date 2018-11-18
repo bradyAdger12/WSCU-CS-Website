@@ -1,0 +1,7 @@
+{% extends "ParentTemplateHomePage.html" %}
+{% block home_style %}
+    <link href="../static/css/HomePageStyle.css" rel="stylesheet" type="text/css">
+{% endblock home_style %}
+{% block home_header %}
+    <h1 id="header">Welcome {{ current_user.firstname }} {{ current_user.lastname }}</h1>
+{% endblock home_header %}
