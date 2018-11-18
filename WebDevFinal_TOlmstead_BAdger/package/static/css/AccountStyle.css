@@ -103,7 +103,6 @@ input[type=submit] {
     overflow: hidden;
     background-color: white;
     color: black;
-    font-size: 150%;
     width: 1%;
     padding-left: 6%;
     border: solid black;
@@ -114,7 +113,7 @@ input[type=submit] {
     color: black;
     outline: none;
     border: none;
-    font-size: 100%;
+    font-size: 150%;
 }
 .dropdown-links {
     background-color: white;
@@ -128,7 +127,6 @@ input[type=submit] {
     display: block;
     background-color: white;
     color: black;
-    font-size: 100%;
     text-align: left;
 }
 .dropdown-links a:hover {

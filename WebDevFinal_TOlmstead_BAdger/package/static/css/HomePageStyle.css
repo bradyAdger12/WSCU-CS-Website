@@ -75,7 +75,6 @@ nav ul li a:hover {
     overflow: hidden;
     background-color: white;
     color: black;
-    font-size: 150%;
     width: 1%;
     padding-left: 6%;
     border: solid black;
@@ -84,9 +83,9 @@ nav ul li a:hover {
     background-color: white;
     font-family: Serif;
     color: black;
+    font-size: 150%;
     outline: none;
     border: none;
-    font-size: 100%;
 }
 .dropdown-links {
     background-color: white;
@@ -100,7 +99,6 @@ nav ul li a:hover {
     display: block;
     background-color: white;
     color: black;
-    font-size: 100%;
     text-align: left;
 }
 .dropdown-links a:hover {
