@@ -63,6 +63,7 @@ nav ul li a:hover {
     border: solid white;
     background-color: red;
     margin-left: 35%;
+    margin-bottom: 2%;
     width: 35%;
 }
 #account_info {
@@ -72,11 +73,24 @@ nav ul li a:hover {
 #form_label {
     color: white;
     font-size: 150%;
-
+    margin-left: 25%;
 }
 .invalid-feedback {
     color: black;
 }
 #form_legend {
     color: white;
+    font-size: 150%;
+    margin-left: 32%;
+}
+input[type=text] {
+    margin-left: 25%;
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    border: solid white;
+}
+input[type=submit] {
+    margin-left: 37%;
+    font-size: 100%;
 }
