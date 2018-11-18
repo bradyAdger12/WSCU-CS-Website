@@ -42,6 +42,7 @@ def login():
             return redirect(url_for('home'))
         else:
             print("Unsuccessful login check email and password.")
+            return redirect(url_for('login'))
     return render_template("LoginAccount.html", form=form)
 
 @app.route('/logout')
