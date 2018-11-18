@@ -69,3 +69,14 @@ nav ul li a:hover {
     color: white;
     font-size: 150%;
 }
+#form_label {
+    color: white;
+    font-size: 150%;
+
+}
+.invalid-feedback {
+    color: black;
+}
+#form_legend {
+    color: white;
+}

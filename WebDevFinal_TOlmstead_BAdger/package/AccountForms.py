@@ -27,3 +27,18 @@ class FormLogin(FlaskForm):
     password = PasswordField('Password: ', validators=[DataRequired()])
     remember_me = BooleanField('Remember Me: ')
     submit = SubmitField('Login')
+
+class FormUpdateAccount(FlaskForm):
+    email = StringField('Update Email: ', validators=[DataRequired(Length(max=25)), Email()])
+    username = StringField('Update Username: ', validators=[DataRequired(Length(min=8, max=25))])
+    submit = SubmitField('Update Account')
+    def validate_username(self, username):
+        if current_user.username != username:
+            user = User.query.filter_by(username=username.data).first()
+            if user:
+                raise ValidationError('Username is already taken!')
+    def validate_email(self, email):
+        if current_user.email != email:
+            user = User.query.filter_by(email=email.data).first()
+            if user:
+                raise ValidationError('Email is already taken!')

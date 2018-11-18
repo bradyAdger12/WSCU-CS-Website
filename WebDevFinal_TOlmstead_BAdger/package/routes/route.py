@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, send_from_directory
-from package.AccountForms import FormCreateAccount, FormLogin
+from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount
 from package import app
 from package import bcrypt
 from package import db
@@ -52,5 +52,11 @@ def home():
 
 @app.route('/account', methods=['GET', 'POST'])
 def account():
-    return render_template('Account.html')
+    form = FormUpdateAccount()
+    if form.validate_on_submit():
+        current_user.username = form.username.data
+        current_user.email = form.email.data
+        db.session.commit()
+        return redirect(url_for('account'))
+    return render_template('Account.html', form=form)
 

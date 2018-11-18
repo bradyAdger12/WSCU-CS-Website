@@ -10,4 +10,35 @@
         <p id="account_info" align="center">Username:   {{ current_user.username }}</p>
         <p id="account_info" align="center">Email:      {{ current_user.email }}</p>
     </div>
+    <div class="account_info_outline">
+        <form class="form" action="" method="post">
+            {{ form.hidden_tag() }}
+            <legend id="form_legend">Reset Account Info</legend><br>
+            <label id="form_label">{{ form.email.label }}</label><br>
+            {% if form.email.errors %}
+                {{ form.email(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                        {{ error }}
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.email }}<br>
+            {% endif %}
+            <!-- Reset Email -->
+            <label id="form_label">{{ form.username.label }}</label><br>
+            {% if form.username.errors %}
+                {{ form.username(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.username.errors %}
+                        {{ error }}
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.username }}<br>
+            {% endif %}
+            <!-- Reset Username -->
+            {{ form.submit }}
+        </form>
+    </div>
 {% endblock account_content %}
