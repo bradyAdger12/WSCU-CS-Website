@@ -59,6 +59,8 @@ def home():
             return redirect(url_for('data_structures'))
         elif select_options == "Databases":
             return redirect(url_for('databases'))
+        elif select_options == "Graphics":
+            return redirect(url_for('graphics'))
     return render_template("Home.html", form=request.form)
 
 @app.route('/account', methods=['GET', 'POST'])
