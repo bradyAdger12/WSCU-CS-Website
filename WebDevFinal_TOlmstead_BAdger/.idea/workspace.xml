@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07a541d-0f32-4e56-bf81-846fb756a764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package/static/css/CssLanguages/css_topics/GraphicsStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/Languages/Topics/Graphics/Graphics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/routes/language_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/routes/language_routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/routes/route.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/routes/route.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/templates/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/Languages/C#.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Languages/Syntax/C#.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/Languages/C++.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Languages/Syntax/C++.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/Languages/HTML.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Languages/Syntax/HTML.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/Languages/Java.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Languages/Syntax/Java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/Languages/JavaScript.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Languages/Syntax/JavaScript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/Languages/Python.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Languages/Syntax/Python.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,29 +76,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="43" />
-          <entry key="html" value="36" />
+          <entry key="html" value="37" />
           <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="43" />
-          <entry key="HTML" value="36" />
+          <entry key="HTML" value="37" />
           <entry key="Python" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1041" />
-          <entry key="html" value="6589" />
-          <entry key="py" value="5282" />
+          <entry key="html" value="6925" />
+          <entry key="py" value="5478" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1041" />
-          <entry key="HTML" value="6589" />
-          <entry key="Python" value="5282" />
+          <entry key="HTML" value="6925" />
+          <entry key="Python" value="5478" />
         </counts>
       </usages-collector>
     </session>
@@ -115,13 +108,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package/routes/route.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+            <state relative-caret-position="293">
+              <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
-                <marker date="1542668808662" expanded="true" signature="1993:2051" ph="..." />
-                <marker date="1542668808662" expanded="true" signature="2494:2499" ph="..." />
-                <marker date="1542668808662" expanded="true" signature="3120:3124" ph="..." />
+                <marker date="1542670191137" expanded="true" signature="1993:2051" ph="..." />
+                <marker date="1542670191137" expanded="true" signature="2671:2676" ph="..." />
+                <marker date="1542670191137" expanded="true" signature="3297:3301" ph="..." />
               </folding>
             </state>
           </provider>
@@ -148,17 +141,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package/templates/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="210">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Graphics/Graphics.html">
+        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -166,19 +159,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package/routes/language_routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+            <state relative-caret-position="480">
+              <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
-                <marker date="1542668283154" expanded="true" signature="138:143" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="268:273" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="387:392" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="499:504" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="613:618" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="739:744" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="881:886" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="1030:1035" ph="..." />
-                <marker date="1542668283154" expanded="true" signature="1167:1172" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="138:143" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="268:273" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="387:392" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="499:504" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="613:618" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="739:744" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="881:886" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="1030:1035" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="1167:1172" ph="..." />
+                <marker date="1542669895165" expanded="true" signature="1310:1315" ph="..." />
               </folding>
             </state>
           </provider>
@@ -200,8 +194,8 @@
       <list>
         <option value="Flask Main" />
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -247,14 +241,14 @@
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/DataStructures.html" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/css_topics/SQL_Database_Style.css" />
-        <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/Databases.html" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/css_topics/GraphicsStyle.css" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Graphics/Graphics.html" />
+        <option value="$PROJECT_DIR$/package/static/css/HomePageStyle.css" />
+        <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html" />
         <option value="$PROJECT_DIR$/package/routes/language_routes.py" />
         <option value="$PROJECT_DIR$/package/templates/Home.html" />
         <option value="$PROJECT_DIR$/package/routes/route.py" />
-        <option value="$PROJECT_DIR$/package/static/css/HomePageStyle.css" />
       </list>
     </option>
   </component>
@@ -320,6 +314,15 @@
               <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDevFinal_TOlmstead_BAdger" type="462c0819:PsiDirectoryNode" />
               <item name="package" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="CssLanguages" type="462c0819:PsiDirectoryNode" />
+              <item name="css_topics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevFinal_TOlmstead_BAdger" type="462c0819:PsiDirectoryNode" />
+              <item name="package" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,6 +339,15 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="Languages" type="462c0819:PsiDirectoryNode" />
               <item name="Topics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevFinal_TOlmstead_BAdger" type="462c0819:PsiDirectoryNode" />
+              <item name="package" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Languages" type="462c0819:PsiDirectoryNode" />
+              <item name="Topics" type="462c0819:PsiDirectoryNode" />
+              <item name="Databases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
@@ -412,8 +424,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -427,7 +440,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -729,32 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package/routes/language_routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-            <marker date="1542668283154" expanded="true" signature="138:143" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="268:273" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="387:392" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="499:504" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="613:618" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="739:744" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="881:886" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="1030:1035" ph="..." />
-            <marker date="1542668283154" expanded="true" signature="1167:1172" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package/templates/Home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package/static/css/HomePageStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -762,15 +749,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/routes/language_routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+            <marker date="1542669895165" expanded="true" signature="138:143" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="268:273" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="387:392" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="499:504" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="613:618" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="739:744" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="881:886" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="1030:1035" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="1167:1172" ph="..." />
+            <marker date="1542669895165" expanded="true" signature="1310:1315" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/templates/Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package/routes/route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+        <state relative-caret-position="293">
+          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1542668808662" expanded="true" signature="1993:2051" ph="..." />
-            <marker date="1542668808662" expanded="true" signature="2494:2499" ph="..." />
-            <marker date="1542668808662" expanded="true" signature="3120:3124" ph="..." />
+            <marker date="1542670191137" expanded="true" signature="1993:2051" ph="..." />
+            <marker date="1542670191137" expanded="true" signature="2671:2676" ph="..." />
+            <marker date="1542670191137" expanded="true" signature="3297:3301" ph="..." />
           </folding>
         </state>
       </provider>

@@ -28,3 +28,6 @@ def databases():
 @app.route('/graphics', methods=['GET', 'POST'])
 def graphics():
     return render_template("Languages/Topics/Graphics/Graphics.html")
+@app.route('/sql_database', methods=['GET', 'POST'])
+def sql_database():
+    return render_template("Languages/Topics/Databases/SQL_Database.html")

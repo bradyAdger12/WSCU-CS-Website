@@ -55,12 +55,16 @@ def logout():
 def home():
     if request.method == 'POST':
         select_options = request.form['select']
-        if select_options == "Data Structures":
+        select_language = request.form['language_select']
+        if select_options == "Data Structures" and select_language == 'None':
             return redirect(url_for('data_structures'))
-        elif select_options == "Databases":
+        elif select_options == "Databases" and select_language == 'None':
             return redirect(url_for('databases'))
-        elif select_options == "Graphics":
+        elif select_options == "Graphics" and select_language == 'None':
             return redirect(url_for('graphics'))
+        elif select_options == "Databases" and select_language == 'SQL':
+            return redirect(url_for('sql_database'))
+
     return render_template("Home.html", form=request.form)
 
 @app.route('/account', methods=['GET', 'POST'])
