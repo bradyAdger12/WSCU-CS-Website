@@ -1,4 +1,4 @@
-from flask import render_template, redirect
+from flask import render_template, redirect, request
 from package import app
 
 @app.route('/python', methods=['GET', 'POST'])
@@ -19,3 +19,9 @@ def java():
 @app.route('/javascript', methods=['GET', 'POST'])
 def javascript():
     return render_template("Languages/JavaScript.html")
+@app.route('/data_structures', methods=['GET', 'POST'])
+def data_structures():
+    return render_template("Languages/Topics/DataStructures/DataStructures.html")
+@app.route('/databases', methods=['GET', 'POST'])
+def databases():
+    return render_template("Languages/Topics/Databases/Databases.html")

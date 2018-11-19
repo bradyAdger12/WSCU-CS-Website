@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount, FormDeleteAccount
 from package import app
 from package import bcrypt
@@ -53,7 +53,13 @@ def logout():
 @app.route('/home', methods=['GET', 'POST'])
 @login_required
 def home():
-    return render_template("Home.html")
+    if request.method == 'POST':
+        select_options = request.form['select']
+        if select_options == "Data Structures":
+            return redirect(url_for('data_structures'))
+        elif select_options == "Databases":
+            return redirect(url_for('databases'))
+    return render_template("Home.html", form=request.form)
 
 @app.route('/account', methods=['GET', 'POST'])
 def account():

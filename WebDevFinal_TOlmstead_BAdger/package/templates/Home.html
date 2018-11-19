@@ -3,5 +3,15 @@
     <link href="../static/css/HomePageStyle.css" rel="stylesheet" type="text/css">
 {% endblock home_style %}
 {% block home_header %}
+    <h1 id="welcome">Western Colorado University Computer Science</h1>
     <h1 id="header">Welcome {{ current_user.firstname }} {{ current_user.lastname }}</h1>
+    <br><br>
+    <form class="form" action="" method="post">
+        <select class="select" name="select">
+            <option value="Data Structures">Data Structures</option>
+            <option value="Databases">Databases</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
 {% endblock home_header %}

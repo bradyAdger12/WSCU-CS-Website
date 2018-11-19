@@ -22,20 +22,17 @@ nav ul li a:link {
 nav ul li a:visited {
     font-size: 150%;
     color: black;
-
+    text-decoration: none;
 }
 nav ul li a:hover {
     font-size: 150%;
     color: red;
-
+    text-decoration: none;
 }
 #header {
     color: white;
     margin-left: 36%;
     font-size: 250%;
-}
-#welcome {
-    margin-left: 28%;
 }
 .table {
     margin-left: -2%;
@@ -65,17 +62,8 @@ nav ul li a:hover {
     padding-left: 6%;
     border: solid black;
 }
-.select {
-    width: 20%;
-    margin-left: 40%;
-    font-size: 150%;
-    text-indent: 30%;
-}
-input[type=submit] {
-    margin-left: 45%;
-    width: 10%;
-    font-size: 125%;
-}
+
+
 
 
 
@@ -95,9 +83,9 @@ input[type=submit] {
     background-color: white;
     font-family: Serif;
     color: black;
-    font-size: 150%;
     outline: none;
     border: none;
+    font-size: 150%;
 }
 .dropdown-links {
     background-color: white;
