@@ -43,3 +43,9 @@ def c_plus_plus_ds():
 @app.route('/python_db', methods=['GET', 'POST'])
 def python_db():
     return render_template("Languages/Topics/Databases/Python_DB.html")
+@app.route('/java_db', methods=['GET', 'POST'])
+def java_db():
+    return render_template("Languages/Topics/Databases/Java_DB.html")
+@app.route('/c_plus_plus_db', methods=['GET', 'POST'])
+def c_plus_plus_db():
+    return render_template("Languages/Topics/Databases/C_Plus_Plus_DB.html")
