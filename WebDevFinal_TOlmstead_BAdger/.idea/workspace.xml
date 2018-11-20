@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b07a541d-0f32-4e56-bf81-846fb756a764" name="Default Changelist" comment="" />
+    <list default="true" id="b07a541d-0f32-4e56-bf81-846fb756a764" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package/static/css/HomePageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/package/static/css/HomePageStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/Home.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,29 +72,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="43" />
+          <entry key="css" value="44" />
           <entry key="html" value="53" />
           <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="43" />
+          <entry key="CSS" value="44" />
           <entry key="HTML" value="53" />
           <entry key="Python" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1041" />
-          <entry key="html" value="7652" />
+          <entry key="css" value="1100" />
+          <entry key="html" value="7654" />
           <entry key="py" value="7616" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1041" />
-          <entry key="HTML" value="7652" />
+          <entry key="CSS" value="1100" />
+          <entry key="HTML" value="7654" />
           <entry key="Python" value="7616" />
         </counts>
       </usages-collector>
@@ -99,10 +102,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package/routes/route.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="180">
               <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
               <folding>
                 <element signature="e#0#97#0" expanded="true" />
@@ -133,28 +136,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/templates/LoginAccount.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Graphics/Graphics.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package/templates/Home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package/static/css/HomePageStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -244,7 +238,6 @@
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/Databases.html" />
         <option value="$PROJECT_DIR$/package/static/css/CssLanguages/css_topics/GraphicsStyle.css" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Graphics/Graphics.html" />
-        <option value="$PROJECT_DIR$/package/static/css/HomePageStyle.css" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Python_DS.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Java_DS.html" />
@@ -256,9 +249,10 @@
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Graphics/Java_Graphics.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Graphics/c_plus_plus_graphics.html" />
         <option value="$PROJECT_DIR$/package/routes/language_routes.py" />
-        <option value="$PROJECT_DIR$/package/templates/Home.html" />
         <option value="$PROJECT_DIR$/package/templates/LoginAccount.html" />
         <option value="$PROJECT_DIR$/package/routes/route.py" />
+        <option value="$PROJECT_DIR$/package/templates/Home.html" />
+        <option value="$PROJECT_DIR$/package/static/css/HomePageStyle.css" />
       </list>
     </option>
   </component>
@@ -434,9 +428,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -450,7 +443,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -731,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package/static/css/HomePageStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Python_DS.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -815,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package/templates/Home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package/routes/language_routes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
@@ -867,7 +846,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package/routes/route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="180">
           <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
           <folding>
             <element signature="e#0#97#0" expanded="true" />
@@ -875,6 +854,20 @@
             <marker date="1542743622018" expanded="true" signature="4647:4652" ph="..." />
             <marker date="1542743622018" expanded="true" signature="5273:5277" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/templates/Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/static/css/HomePageStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
         </state>
       </provider>
     </entry>

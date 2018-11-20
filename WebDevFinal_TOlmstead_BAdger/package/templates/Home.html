@@ -8,11 +8,11 @@
     <br><br>
     {% with message = get_flashed_messages() %}
         {% if message %}
-            <h3 class="flashed_messages" align="center">
+            <div class="flashed_messages" align="center">
                 {% for m in message %}
                     {{ m }}
                 {% endfor %}
-            </h3>
+            </div>
         {% endif %}
     {% endwith %}
     <form class="form" action="" method="post">
