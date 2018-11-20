@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, flash, get_flashed_messages
 from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount, FormDeleteAccount
 from package import app
 from package import bcrypt
@@ -80,6 +80,12 @@ def home():
             return redirect(url_for('java_db'))
         elif select_options == "Databases" and select_language == "C++":
             return redirect(url_for('c_plus_plus_db'))
+        elif select_options == "Graphics" and select_language == "Python":
+            return redirect(url_for('python_graphics'))
+        elif select_options == "Graphics" and select_language == "Java":
+            return redirect(url_for('java_graphics'))
+        elif select_options == "Graphics" and select_language == "C++":
+            return redirect(url_for('c_plus_plus_graphics'))
 
 
     return render_template("Home.html", form=request.form)

@@ -49,3 +49,12 @@ def java_db():
 @app.route('/c_plus_plus_db', methods=['GET', 'POST'])
 def c_plus_plus_db():
     return render_template("Languages/Topics/Databases/C_Plus_Plus_DB.html")
+@app.route('/python_graphics', methods=['GET', 'POST'])
+def python_graphics():
+    return render_template("Languages/Topics/Graphics/Python_Graphics.html")
+@app.route('/java_graphics', methods=['GET', 'POST'])
+def java_graphics():
+    return render_template("Languages/Topics/Graphics/Java_Graphics.html")
+@app.route('/c_plus_plus_graphics', methods=['GET', 'POST'])
+def c_plus_plus_graphics():
+    return render_template("Languages/Topics/Graphics/c_plus_plus_graphics.html")
