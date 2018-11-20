@@ -63,6 +63,8 @@ def home():
         elif select_options == "Graphics" and select_language == 'None':
             return redirect(url_for('graphics'))
         elif select_options == "Data Structures" and select_language == "SQL":
+            flash('SQL does not support Data Structures.  Select a different language!', 'success')
+            print("Unsuccessful")
             return redirect(url_for('home'))#redirect home because no one does data structures in sql
         elif select_options == "Databases" and select_language == 'SQL':
             return redirect(url_for('sql_database'))
