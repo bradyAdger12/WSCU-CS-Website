@@ -4,6 +4,13 @@
 {% endblock login_account_style %}
 {% block account_login %}
     <div class="form_div">
+        {% with message = get_flashed_messages() %}
+            <h3 align="center">
+                {% for m in message %}
+                    {{ m }}
+                {% endfor %}
+            </h3>
+        {% endwith %}
         <form class="form" action="" method="post">
             {{ form.hidden_tag() }}
             <legend id="form_legend">Login</legend>

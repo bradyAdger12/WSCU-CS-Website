@@ -21,6 +21,7 @@ def create_account():
         db.session.add(user)
         db.session.commit()
         user = User.query.filter_by(email=form.email.data).first()
+        flash('Account Created Successfully!')
         login_user(user)
         return redirect(url_for('home'))
 
@@ -38,9 +39,11 @@ def login():
         user = User.query.filter_by(email=form.email.data).first()
         check_password = bcrypt.check_password_hash(user.password, form.password.data)
         if user and check_password:
+            flash('Successful Login!')
             login_user(user, form.remember_me.data)
             return redirect(url_for('home'))
         else:
+            flash('Unsuccessful login!  Check Username and password!')
             print("Unsuccessful login check email and password.")
             return redirect(url_for('login'))
     return render_template("LoginAccount.html", form=form)
