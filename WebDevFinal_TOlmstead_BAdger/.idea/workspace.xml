@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07a541d-0f32-4e56-bf81-846fb756a764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/C_Plus_Plus_DS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/Python_DB.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/routes/language_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/routes/language_routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/routes/route.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/routes/route.py" afterDir="false" />
     </list>
@@ -74,14 +75,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="43" />
-          <entry key="html" value="42" />
+          <entry key="html" value="44" />
           <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="43" />
-          <entry key="HTML" value="42" />
+          <entry key="HTML" value="44" />
           <entry key="Python" value="22" />
         </counts>
       </usages-collector>
@@ -89,14 +90,14 @@
         <counts>
           <entry key="css" value="1041" />
           <entry key="html" value="7410" />
-          <entry key="py" value="6394" />
+          <entry key="py" value="6536" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1041" />
           <entry key="HTML" value="7410" />
-          <entry key="Python" value="6394" />
+          <entry key="Python" value="6536" />
         </counts>
       </usages-collector>
     </session>
@@ -106,23 +107,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package/routes/route.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+            <state relative-caret-position="363">
+              <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
-                <marker date="1542672675454" expanded="true" signature="1993:2051" ph="..." />
-                <marker date="1542672675454" expanded="true" signature="3512:3517" ph="..." />
-                <marker date="1542672675454" expanded="true" signature="4138:4142" ph="..." />
+                <marker date="1542674300880" expanded="true" signature="1993:2051" ph="..." />
+                <marker date="1542674300880" expanded="true" signature="3638:3643" ph="..." />
+                <marker date="1542674300880" expanded="true" signature="4264:4268" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/C_Plus_Plus_DS.html">
+        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Databases/Python_DB.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="105">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -137,43 +147,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Java_DS.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Python_DS.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package/routes/language_routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+            <state relative-caret-position="660">
+              <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
-                <marker date="1542672382340" expanded="true" signature="138:143" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="268:273" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="387:392" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="499:504" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="613:618" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="739:744" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="881:886" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="1030:1035" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="1167:1172" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="1310:1315" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="1452:1457" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="1592:1597" ph="..." />
-                <marker date="1542672382340" expanded="true" signature="1744:1749" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="138:143" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="268:273" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="387:392" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="499:504" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="613:618" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="739:744" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="881:886" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="1030:1035" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="1167:1172" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="1310:1315" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="1452:1457" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="1592:1597" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="1744:1749" ph="..." />
+                <marker date="1542674300870" expanded="true" signature="1893:1898" ph="..." />
               </folding>
             </state>
           </provider>
@@ -242,6 +235,7 @@
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Python_DS.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Java_DS.html" />
         <option value="$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/C_Plus_Plus_DS.html" />
+        <option value="$PROJECT_DIR$/package/templates/Languages/Topics/Databases/Python_DB.html" />
         <option value="$PROJECT_DIR$/package/routes/language_routes.py" />
         <option value="$PROJECT_DIR$/package/routes/route.py" />
       </list>
@@ -342,7 +336,7 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="Languages" type="462c0819:PsiDirectoryNode" />
               <item name="Topics" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="Databases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebDevFinal_TOlmstead_BAdger" type="b2602c69:ProjectViewProjectNode" />
@@ -421,7 +415,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22174536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -744,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/DataStructures/Python_DS.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -779,38 +766,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Databases/SQL_Database.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/templates/Languages/Topics/Databases/Python_DB.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package/routes/language_routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+        <state relative-caret-position="660">
+          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
-            <marker date="1542672382340" expanded="true" signature="138:143" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="268:273" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="387:392" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="499:504" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="613:618" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="739:744" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="881:886" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="1030:1035" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="1167:1172" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="1310:1315" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="1452:1457" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="1592:1597" ph="..." />
-            <marker date="1542672382340" expanded="true" signature="1744:1749" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="138:143" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="268:273" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="387:392" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="499:504" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="613:618" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="739:744" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="881:886" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="1030:1035" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="1167:1172" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="1310:1315" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="1452:1457" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="1592:1597" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="1744:1749" ph="..." />
+            <marker date="1542674300870" expanded="true" signature="1893:1898" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package/routes/route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        <state relative-caret-position="363">
+          <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1542672675454" expanded="true" signature="1993:2051" ph="..." />
-            <marker date="1542672675454" expanded="true" signature="3512:3517" ph="..." />
-            <marker date="1542672675454" expanded="true" signature="4138:4142" ph="..." />
+            <marker date="1542674300880" expanded="true" signature="1993:2051" ph="..." />
+            <marker date="1542674300880" expanded="true" signature="3638:3643" ph="..." />
+            <marker date="1542674300880" expanded="true" signature="4264:4268" ph="..." />
           </folding>
         </state>
       </provider>

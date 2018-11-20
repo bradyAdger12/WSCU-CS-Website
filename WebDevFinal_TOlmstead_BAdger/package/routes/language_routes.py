@@ -40,3 +40,6 @@ def java_ds():
 @app.route('/c_plus_plus_ds', methods=['GET', 'POST'])
 def c_plus_plus_ds():
     return render_template("Languages/Topics/DataStructures/C_Plus_Plus_DS.html")
+@app.route('/python_db', methods=['GET', 'POST'])
+def python_db():
+    return render_template("Languages/Topics/Databases/Python_DB.html")
