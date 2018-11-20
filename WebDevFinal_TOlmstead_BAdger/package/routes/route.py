@@ -62,8 +62,16 @@ def home():
             return redirect(url_for('databases'))
         elif select_options == "Graphics" and select_language == 'None':
             return redirect(url_for('graphics'))
+        elif select_options == "Data Structures" and select_language == "SQL":
+            return redirect(url_for('home'))#redirect home because no one does data structures in sql
         elif select_options == "Databases" and select_language == 'SQL':
             return redirect(url_for('sql_database'))
+        elif select_options == "Graphics" and select_language == 'SQL':
+            return redirect(url_for('home'))#redirect home because no one does graphics in sql
+        elif select_options == "Data Structures" and select_language == "Python":
+            return redirect(url_for('python_ds'))
+        elif select_options == "Data Structures" and select_language == "Java":
+            return redirect(url_for('java_ds'))
 
     return render_template("Home.html", form=request.form)
 

@@ -31,3 +31,9 @@ def graphics():
 @app.route('/sql_database', methods=['GET', 'POST'])
 def sql_database():
     return render_template("Languages/Topics/Databases/SQL_Database.html")
+@app.route('/python_ds', methods=['GET', 'POST'])
+def python_ds():
+    return render_template("Languages/Topics/DataStructures/Python_DS.html")
+@app.route('/java_ds', methods=['GET', 'POST'])
+def java_ds():
+    return render_template("Languages/Topics/DataStructures/Java_DS.html")
