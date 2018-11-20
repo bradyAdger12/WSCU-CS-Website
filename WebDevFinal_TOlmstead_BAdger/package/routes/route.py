@@ -72,6 +72,9 @@ def home():
             return redirect(url_for('python_ds'))
         elif select_options == "Data Structures" and select_language == "Java":
             return redirect(url_for('java_ds'))
+        elif select_options == "Data Structures" and select_language == "C++":
+            return redirect(url_for('c_plus_plus_ds'))
+
 
     return render_template("Home.html", form=request.form)
 

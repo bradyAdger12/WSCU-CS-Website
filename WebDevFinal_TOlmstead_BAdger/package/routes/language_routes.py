@@ -37,3 +37,6 @@ def python_ds():
 @app.route('/java_ds', methods=['GET', 'POST'])
 def java_ds():
     return render_template("Languages/Topics/DataStructures/Java_DS.html")
+@app.route('/c_plus_plus_ds', methods=['GET', 'POST'])
+def c_plus_plus_ds():
+    return render_template("Languages/Topics/DataStructures/C_Plus_Plus_DS.html")
