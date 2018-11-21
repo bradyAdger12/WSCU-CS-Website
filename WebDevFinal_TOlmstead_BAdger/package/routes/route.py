@@ -96,6 +96,7 @@ def home():
     return render_template("Home.html", form=request.form)
 
 @app.route('/account', methods=['GET', 'POST'])
+@login_required
 def account():
     form = FormUpdateAccount()
     delete_form = FormDeleteAccount()

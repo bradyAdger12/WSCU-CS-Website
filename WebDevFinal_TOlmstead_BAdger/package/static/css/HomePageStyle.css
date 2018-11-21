@@ -77,7 +77,7 @@ input[type=submit] {
     font-size: 125%;
 }
 .flashed_messages {
-    border: solid white;
+    border: solid black;
     background-color: lawngreen;
     color: black;
     width: 19.5%;
