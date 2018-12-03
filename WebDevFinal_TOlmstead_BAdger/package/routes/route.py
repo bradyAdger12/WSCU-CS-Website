@@ -30,17 +30,27 @@ def create_account():
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    form = FormLogin()
+    print(str(form.remember_me.data) + " before authenticated if statement.")
     if current_user.is_authenticated:
         print("Authenticated")
+        flash('You are already logged in!')
         return redirect(url_for('home'))
-    form = FormLogin()
     if form.validate_on_submit():
         print("Login Successful!")
         user = User.query.filter_by(email=form.email.data).first()
-        check_password = bcrypt.check_password_hash(user.password, form.password.data)
-        if user and check_password:
+        print(user)
+        #check_password = bcrypt.check_password_hash(user.password, form.password.data)
+
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
             flash('Successful Login!')
-            login_user(user, form.remember_me.data)
+            print("After log in")
+            login_user(user, remember=form.remember_me.data)
+            #form.remember_me.data = True
+            print(form.remember_me.data)
+            if form.remember_me.data is not None:
+                form.remember_me.data = True
+                print(str(form.remember_me.data) + " after not none if statement")
             return redirect(url_for('home'))
         else:
             flash('Unsuccessful login!  Check Username and password!')
@@ -50,6 +60,9 @@ def login():
 
 @app.route('/logout')
 def logout():
+    form = FormLogin()
+    form.remember_me.data = False;
+    print(form.remember_me.data)
     logout_user()
     return redirect(url_for('login'))
 
