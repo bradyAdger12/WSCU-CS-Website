@@ -1,4 +1,5 @@
-from flask import render_template, redirect, request
+from flask import render_template, redirect, request, url_for
+#from package.routes.lectures import *
 from package import app
 from flask_login import login_required
 
@@ -9,6 +10,22 @@ def python():
 @app.route('/c_plus_plus', methods=['GET', 'POST'])
 @login_required
 def c_plus_plus():
+    if request.method == 'POST':
+        select_lecture = request.form['cpp_select']
+        if select_lecture == "variables":
+            return redirect(url_for('cpp_variables'))
+        elif select_lecture == "flow_control":
+            return redirect(url_for('cpp_flow_control'))
+        elif select_lecture == "file_io":
+            return redirect(url_for('cpp_fileIO'))
+        elif select_lecture == "functions":
+            return redirect(url_for('cpp_functions'))
+        elif select_lecture == "pointers_and_new":
+            return redirect(url_for('cpp_pointers'))
+        elif select_lecture == "structs_and_classes":
+            return redirect(url_for('cpp_structs_and_classes'))
+        elif select_lecture == "pointers":
+            return redirect(url_for('cpp_pointers'))
     return render_template("Languages/Syntax/C++.html")
 @app.route('/c_sharp', methods=['GET', 'POST'])
 @login_required

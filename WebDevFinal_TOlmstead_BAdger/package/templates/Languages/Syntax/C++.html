@@ -4,4 +4,17 @@
 {% endblock languages_style %}
 {% block languages_content %}
     <h1 align="center" >C++</h1>
+    <div class="form_div">
+        <form class="form" action="" method="post">
+            <select class="cpp_dropdown" name="cpp_select">
+                <option id="cpp_options1" value="variables">Variables</option>
+                <option id="cpp_options2" value="flow_control">Flow Control</option>
+                <option id="cpp_options3" value="file_io">File IO</option>
+                <option id="cpp_options4" value="functions">Functions</option>
+                <option id="cpp_options5" value="pointers_and_new">Pointers</option>
+                <option id="cpp_options6" value="structs_and_classes">Classes</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 {% endblock languages_content %}
