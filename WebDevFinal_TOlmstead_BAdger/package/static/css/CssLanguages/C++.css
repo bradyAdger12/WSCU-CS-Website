@@ -119,3 +119,11 @@ input[type=submit] {
     width: 50%;
     font-size: 200%;
 }
+/*Variables.html styling*/
+.images {
+    margin-left: 30%;
+    width: 42.15%;
+    border: solid black;
+}
+
+/*end of Variables.html styling*/
