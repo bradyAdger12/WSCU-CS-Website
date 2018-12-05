@@ -62,6 +62,16 @@ def java():
 @app.route('/javascript', methods=['GET', 'POST'])
 @login_required
 def javascript():
+    if request.method == 'POST':
+        form = request.form['js_select']
+        if form == 'helloJS':
+            return redirect(url_for('js_hello'))
+        elif form == 'js2':
+            return redirect(url_for('js_2'))
+        elif form == 'domJS':
+            return redirect(url_for('js_dom'))
+        elif form == 'eventsJS':
+            return redirect(url_for('js_events'))
     return render_template("Languages/Syntax/JavaScript.html")
 @app.route('/data_structures', methods=['GET', 'POST'])
 @login_required
