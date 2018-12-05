@@ -96,7 +96,7 @@ def python_ds():
 @app.route('/java_ds', methods=['GET', 'POST'])
 @login_required
 def java_ds():
-    return render_template("Languages/Topics/DataStructures/Java_DS.html")
+    return render_template("Languages/Topics/DataStructures/Java_DS/Java_DS.html")
 @app.route('/c_plus_plus_ds', methods=['GET', 'POST'])
 @login_required
 def c_plus_plus_ds():
