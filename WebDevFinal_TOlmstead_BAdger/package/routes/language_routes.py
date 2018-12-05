@@ -34,6 +34,26 @@ def c_sharp():
 @app.route('/html', methods=['GET', 'POST'])
 @login_required
 def html():
+    if request.method == 'POST':
+        select_lecture = request.form['html_select']
+        if select_lecture == 'getting_started':
+            return redirect(url_for('html_getting_started'))
+        elif select_lecture == 'hosting_images':
+            return redirect(url_for('html_hosting_and_images'))
+        elif select_lecture == 'css basics':
+            return redirect(url_for('html_css_basics'))
+        elif select_lecture == 'Box Model':
+            return redirect(url_for('html_box_model'))
+        elif select_lecture == 'layouts':
+            return redirect(url_for('html_layouts_and_positioning'))
+        elif select_lecture == 'tables':
+            return redirect(url_for('html_tables'))
+        elif select_lecture == 'forms':
+            return redirect(url_for('html_forms'))
+        elif select_lecture == 'flask1':
+            return redirect(url_for('html_flask_routes'))
+        elif select_lecture == 'flask2':
+            return redirect(url_for('html_flask_databases'))
     return render_template("Languages/Syntax/HTML.html")
 @app.route('/java', methods=['GET', 'POST'])
 @login_required
