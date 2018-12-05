@@ -63,3 +63,20 @@ def html_layouts_and_positioning():
 @login_required
 def html_tables():
     return render_template("Languages/HTML_Content/Tables.html")
+#JavaScript Content Routes
+@app.route('/js_hello', methods=['GET', 'POST'])
+@login_required
+def js_hello():
+    return render_template("Languages/JS_Content/HelloJavaScript.html")
+@app.route('/js_2', methods=['GET', 'POST'])
+@login_required
+def js_2():
+    return render_template("Languages/JS_Content/JavaScript2.html")
+@app.route('/js_dom', methods=['GET', 'POST'])
+@login_required
+def js_dom():
+    return render_template("Languages/JS_Content/JS3_DOM.html")
+@app.route('/js_events', methods=['GET', 'POST'])
+@login_required
+def js_events():
+    return render_template("Languages/JS_Content/JS3_Events.html")
