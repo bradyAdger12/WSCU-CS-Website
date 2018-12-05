@@ -1,0 +1,20 @@
+{% extends "ParentTemplateHomePage.html" %}
+{% block languages_style %}
+    <link href="../static/css/CssLanguages/css_topics/DataStructuresStyle.css" rel="stylesheet" type="text/css">
+{% endblock languages_style %}
+{% block languages_content %}
+    <h1 align="center">Western Computer Science</h1>
+    <h1 align="center">Data Structures in Java</h1>
+    <div class="ds_form">
+        <form action="/javaDataStructures" method="POST">
+            <select name="structureDropdown">
+              <option value="Array">Array</option>
+              <option value="ArrayList">ArrayList</option>
+              <option value="Stack">Stack</option>
+              <option value="Queue">Queue</option>
+            </select>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+{% endblock languages_content %}
