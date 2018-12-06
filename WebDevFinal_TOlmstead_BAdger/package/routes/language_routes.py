@@ -130,4 +130,12 @@ def java_graphics():
 @app.route('/c_plus_plus_graphics', methods=['GET', 'POST'])
 @login_required
 def c_plus_plus_graphics():
+    if request.method == 'POST':
+        form = request.form['cpp_graphics_select']
+        if form == 'graphics':
+            return redirect(url_for('of_graphics'))
+        elif form == 'events':
+            return redirect(url_for('of_events'))
+        elif form == 'sound':
+            return redirect(url_for('of_sound'))
     return render_template("Languages/Topics/Graphics/c_plus_plus_graphics.html")
