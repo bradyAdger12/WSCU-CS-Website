@@ -9,3 +9,4 @@ def java_ds_select():
       return render_template("Languages/Topics/DataStructures/Java_DS/Array.html")
     if structure == "ArrayList":
       return render_template("Languages/Topics/DataStructures/Java_DS/ArrayList.html")
+

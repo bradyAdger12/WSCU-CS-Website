@@ -100,6 +100,12 @@ def java_ds():
 @app.route('/c_plus_plus_ds', methods=['GET', 'POST'])
 @login_required
 def c_plus_plus_ds():
+    if request.method == 'POST':
+        form = request.form['cpp_ds_select']
+        if form == 'vectors':
+            return redirect(url_for('vectors'))
+        elif form == 'maps':
+            return redirect(url_for('maps'))
     return render_template("Languages/Topics/DataStructures/C_Plus_Plus_DS.html")
 @app.route('/python_db', methods=['GET', 'POST'])
 @login_required

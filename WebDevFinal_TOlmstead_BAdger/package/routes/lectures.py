@@ -80,3 +80,12 @@ def js_dom():
 @login_required
 def js_events():
     return render_template("Languages/JS_Content/JS3_Events.html")
+#C++ Data Structures Routes
+@app.route('/vectors', methods=['GET', 'POST'])
+@login_required
+def vectors():
+    return render_template("Languages/CPP_Content/Vectors.html")
+@app.route('/maps', methods=['GET', 'POST'])
+@login_required
+def maps():
+    return render_template("Languages/CPP_Content/Maps.html")
