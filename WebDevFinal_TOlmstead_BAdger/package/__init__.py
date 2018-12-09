@@ -12,4 +12,9 @@ bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
+<<<<<<< HEAD
 from package.routes import route, language_routes, dataStructureRoutes
+=======
+
+from package.routes import route, language_routes, dataStructureRoutes, lectures
+>>>>>>> master

@@ -56,3 +56,9 @@ nav ul li a:hover {
     padding-left: 21%;
     border: solid black;
 }
+.link4 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 2%;
+    border: solid black;
+}

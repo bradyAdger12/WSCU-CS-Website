@@ -80,3 +80,25 @@ def js_dom():
 @login_required
 def js_events():
     return render_template("Languages/JS_Content/JS3_Events.html")
+#C++ Data Structures Routes
+@app.route('/vectors', methods=['GET', 'POST'])
+@login_required
+def vectors():
+    return render_template("Languages/CPP_Content/Vectors.html")
+@app.route('/maps', methods=['GET', 'POST'])
+@login_required
+def maps():
+    return render_template("Languages/CPP_Content/Maps.html")
+#C++ Graphics
+@app.route('/of_graphics', methods=['GET', 'POST'])
+@login_required
+def of_graphics():
+    return render_template("Languages/CPP_Content/OFGraphics.html")
+@app.route('/of_events', methods=['GET', 'POST'])
+@login_required
+def of_events():
+    return render_template("Languages/CPP_Content/OFEvents.html")
+@app.route('/of_sound', methods=['GET', 'POST'])
+@login_required
+def of_sound():
+    return render_template("Languages/CPP_Content/OFSound.html")

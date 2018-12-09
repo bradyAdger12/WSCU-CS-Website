@@ -47,22 +47,27 @@ nav ul li a:hover {
 .link1 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
 .link2 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
 .link3 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
-
+.link4 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 2%;
+    border: solid black;
+}
 
 
 
@@ -108,4 +113,30 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-links {
     display: block;
     color: red;
+}
+.images {
+    margin-left: 30%;
+    width: 42.15%;
+    border: solid black;
+}
+img {
+    width: 600px;
+    height: 500px;
+}
+.cpp_ds_dropdown {
+    margin-left: 15%;
+    width: 70%;
+    font-size: 200%;
+    /*text-indent: 30%;*/
+}
+
+.form_div {
+    /*border: solid white;*/
+    width: 20%;
+    margin-left: 40%;
+}
+input[type=submit] {
+    margin-left: 25%;
+    width: 50%;
+    font-size: 200%;
 }

@@ -1,0 +1,45 @@
+{% extends "ParentTemplateHomePage.html" %}
+{% block home_style %}
+    <link href="../../static/css/HomePageStyle.css" rel="stylesheet" type="text/css">
+{% endblock home_style %}
+{% block home_header %}
+    <h1 align="center">Community</h1>
+    <div class="form_div">
+        <form class="form" action="" method="post">
+            <select class="select" name="select_post">
+                <option value="newPost">New Post</option>
+                <option value="myPosts">My Posts</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br><br><br>
+    {% if posts_list %}
+        <table class="posts_table">
+            <tr>
+                <th align="center">From</th>
+                <th align="center">Date Posted</th>
+                <th align="center">Post</th>
+            </tr>
+{#            {% for users in user_list %}#}
+{#                {% for post in users.posts[::-1] %}#}
+{#                    <tr>#}
+{#                        <td align="center">{{ users.username }}</td>#}
+{#                        <td align="center">{{ post.post_time }}</td>#}
+{#                        <td align="center">{{ post.post }}</td>#}
+{#                    </tr>#}
+{#                {% endfor %}#}
+{#            {% endfor %}#}
+            {% for posts in posts_list[::-1] %}
+
+                <tr>
+                    <td align="center">{{ posts.owner_name }}</td>
+                    <td align="center">{{ posts.post_time.strftime('%b %d, %Y  %H:%M:%S') }}</td>
+                    <td align="center">{{ posts.post }}</td>
+                </tr>
+
+            {% endfor %}
+
+        </table>
+    {% endif %}
+{% endblock home_header %}
