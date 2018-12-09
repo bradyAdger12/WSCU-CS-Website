@@ -1,5 +1,6 @@
 from package import db, login_manager
 from flask_login import UserMixin
+from datetime import datetime
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -14,6 +15,7 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(60), nullable=False)
     posts = db.relationship('Posts', backref='user')
 
+
     def __repr__(self):
         return "First Name: " + self.firstname + "  Last Name: " + self.lastname + "  Email: " + self.email + \
             "  Username: " + self.username + "  Password: " + self.password
@@ -21,8 +23,10 @@ class User(db.Model, UserMixin):
 class Posts(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     post = db.Column(db.String(100), nullable=False)
-    owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    post_time = db.Column(db.DateTime(timezone=True), nullable=False, default=datetime.utcnow())
+    #owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    owner_name = db.Column(db.String, db.ForeignKey('user.firstname'))
 
     def __repr__(self):
-        return self.post
+        return self.post + " " + str(self.post_time)
 
