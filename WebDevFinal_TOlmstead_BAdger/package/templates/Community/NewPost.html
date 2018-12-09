@@ -1,0 +1,15 @@
+{% extends "ParentTemplateHomePage.html" %}
+{% block home_style %}
+    <link href="../static/css/HomePageStyle.css" rel="stylesheet" type="text/css">
+{% endblock home_style %}
+{% block home_header %}
+    <h1 align="center">New Post</h1>
+
+    <form class="form" action="" method="post" name="formPosts">
+        {{ form.hidden_tag() }}
+        <label id="form_label">{{ form.post.label }}</label><br><br>
+        {{ form.post(class='textArea') }}<br><br>
+        {{ form.submit }}
+    </form>
+
+{% endblock home_header %}

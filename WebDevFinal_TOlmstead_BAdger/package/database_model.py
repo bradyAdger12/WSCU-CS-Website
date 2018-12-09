@@ -12,10 +12,17 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(60), unique=True, nullable=False)
     username = db.Column(db.String(60), unique=True, nullable=True)
     password = db.Column(db.String(60), nullable=False)
+    posts = db.relationship('Posts', backref='user')
 
     def __repr__(self):
         return "First Name: " + self.firstname + "  Last Name: " + self.lastname + "  Email: " + self.email + \
             "  Username: " + self.username + "  Password: " + self.password
 
+class Posts(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    post = db.Column(db.String(100), nullable=False)
+    owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
+    def __repr__(self):
+        return self.post
 

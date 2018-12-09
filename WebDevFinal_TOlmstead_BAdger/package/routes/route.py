@@ -1,9 +1,9 @@
 from flask import Flask, render_template, redirect, url_for, request, flash, get_flashed_messages
-from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount, FormDeleteAccount
+from package.AccountForms import FormCreateAccount, FormLogin, FormUpdateAccount, FormDeleteAccount, PostsForm
 from package import app
 from package import bcrypt
 from package import db
-from package.database_model import User
+from package.database_model import User, Posts
 from flask_login import login_user, current_user, logout_user, login_required
 
 @app.route('/create_account', methods=['GET', 'POST'])
@@ -14,7 +14,6 @@ def create_account():
     form = FormCreateAccount()
     #print("Test")
     if form.validate_on_submit():
-        print("Hello World!!!")
         password_hash = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         user = User(firstname=form.firstname.data, lastname=form.lastname.data, email=form.email.data,
                     username=form.username.data, password=password_hash)
@@ -31,30 +30,30 @@ def create_account():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = FormLogin()
-    print(str(form.remember_me.data) + " before authenticated if statement.")
+    #print(str(form.remember_me.data) + " before authenticated if statement.")
     if current_user.is_authenticated:
-        print("Authenticated")
+        #print("Authenticated")
         flash('You are already logged in!')
         return redirect(url_for('home'))
     if form.validate_on_submit():
-        print("Login Successful!")
+        #print("Login Successful!")
         user = User.query.filter_by(email=form.email.data).first()
-        print(user)
+        #print(user)
         #check_password = bcrypt.check_password_hash(user.password, form.password.data)
 
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             flash('Successful Login!')
-            print("After log in")
+            #print("After log in")
             login_user(user, remember=form.remember_me.data)
             #form.remember_me.data = True
-            print(form.remember_me.data)
+            #print(form.remember_me.data)
             if form.remember_me.data is not None:
                 form.remember_me.data = True
                 print(str(form.remember_me.data) + " after not none if statement")
             return redirect(url_for('home'))
         else:
             flash('Unsuccessful login!  Check Username and password!')
-            print("Unsuccessful login check email and password.")
+            #print("Unsuccessful login check email and password.")
             return redirect(url_for('login'))
     return render_template("LoginAccount.html", form=form)
 
@@ -124,7 +123,44 @@ def account():
         return redirect(url_for('login'))
     return render_template('Account.html', form=form, delete_form=delete_form)
 
-
-
-
-
+@app.route('/community', methods=['GET', 'POST'])
+@login_required
+def community():
+    if request.method == 'POST':
+        print("Post validated.")
+        form = request.form['select_post']
+        if form == 'newPost':
+            for user in User.query.filter_by(email=current_user.email):
+                return redirect(url_for('new_post', id=user.id))
+        elif form == 'myPosts':
+            for user in User.query.filter_by(email=current_user.email):
+                return redirect(url_for('my_posts', id=user.id))
+    posts_list = []
+    user_list = []
+    for posts in Posts.query.all():
+        posts_list.append(posts)
+    for users in User.query.all():
+        user_list.append(users)
+    return render_template("Community/Community.html", posts_list=posts_list, user_list=user_list)
+@app.route('/new_post<id>', methods=['GET', 'POST'])
+@login_required
+def new_post(id):
+    form = PostsForm()
+    user = User.query.filter_by(id=id).first()
+    if form.validate_on_submit():
+        new_user_post = Posts(post=form.post.data)
+        new_user_post.user = user
+        db.session.add(new_user_post)
+        db.session.commit()
+        return redirect(url_for('community', form=form))
+    return render_template("Community/NewPost.html", form=form)
+@app.route('/my_posts<id>', methods=['GET', 'POST'])
+@login_required
+def my_posts(id):
+    post_list = []
+    user = User.query.filter_by(id=id).first()
+    print(user)#successfully printing correct user!
+    for posts in user.posts:
+        post_list.append(posts)
+        print(posts)
+    return render_template("Community/MyPosts.html", post_list=post_list)

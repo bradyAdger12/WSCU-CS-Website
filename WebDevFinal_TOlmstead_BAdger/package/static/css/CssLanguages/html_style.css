@@ -47,19 +47,25 @@ nav ul li a:hover {
 .link1 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
 .link2 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
 .link3 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
+    border: solid black;
+}
+.link4 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 2%;
     border: solid black;
 }
 .dropdown {
@@ -68,7 +74,7 @@ nav ul li a:hover {
     background-color: white;
     color: black;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
 .dropdown .dropbtn {

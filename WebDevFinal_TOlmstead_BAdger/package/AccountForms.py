@@ -1,7 +1,7 @@
 from package.database_model import User
 from flask_login import current_user
 from flask_wtf import FlaskForm
-from wtforms import SubmitField, StringField, PasswordField, BooleanField
+from wtforms import SubmitField, StringField, PasswordField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 
 class FormCreateAccount(FlaskForm):
@@ -47,3 +47,7 @@ class FormUpdateAccount(FlaskForm):
 
 class FormDeleteAccount(FlaskForm):
     submit = SubmitField('Delete Account')
+
+class PostsForm(FlaskForm):
+    post = TextAreaField('Write Post', validators=[Length(max=200)])
+    submit = SubmitField('Post')
