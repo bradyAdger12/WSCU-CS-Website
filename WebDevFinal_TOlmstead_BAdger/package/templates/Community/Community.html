@@ -34,7 +34,7 @@
 
                 <tr>
                     <td align="center">{{ posts.owner_name }}</td>
-                    <td align="center">{{ posts.post_time }}</td>
+                    <td align="center">{{ posts.post_time.strftime('%b %d, %Y  %H:%M:%S') }}</td>
                     <td align="center">{{ posts.post }}</td>
                 </tr>
 

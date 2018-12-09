@@ -14,6 +14,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(60), unique=True, nullable=True)
     password = db.Column(db.String(60), nullable=False)
     posts = db.relationship('Posts', backref='user')
+    #posts_id = db.relationship('Posts', backref='user', foreign_keys='Posts.owner_id')
 
 
     def __repr__(self):
@@ -25,7 +26,7 @@ class Posts(db.Model):
     post = db.Column(db.String(100), nullable=False)
     post_time = db.Column(db.DateTime(timezone=True), nullable=False, default=datetime.utcnow())
     #owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    owner_name = db.Column(db.String, db.ForeignKey('user.firstname'))
+    owner_name = db.Column(db.String, db.ForeignKey('user.username'))
 
     def __repr__(self):
         return self.post + " " + str(self.post_time)
