@@ -102,3 +102,28 @@ nav ul li a:hover {
     display: block;
     color: red;
 }
+.cpp_dropdown {
+    margin-left: 15%;
+    width: 70%;
+    font-size: 200%;
+    text-indent: 30%;
+}
+
+.form_div {
+    /*border: solid white;*/
+    width: 20%;
+    margin-left: 40%;
+}
+input[type=submit] {
+    margin-left: 25%;
+    width: 50%;
+    font-size: 200%;
+}
+/*Variables.html styling*/
+.images {
+    margin-left: 30%;
+    width: 42.15%;
+    border: solid black;
+}
+
+/*end of Variables.html styling*/

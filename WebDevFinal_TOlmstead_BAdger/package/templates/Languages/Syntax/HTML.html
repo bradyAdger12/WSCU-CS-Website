@@ -4,4 +4,20 @@
 {% endblock languages_style %}
 {% block languages_content %}
     <h1 align="center" >HTML</h1>
+    <div class="form_div">
+        <form class="form" action="" method="post">
+            <select class="html_dropdown" name="html_select">
+                <option value="getting_started">Getting Started</option>
+                <option value="hosting_images">Hosting and Images</option>
+                <option value="css basics">CSS Basics</option>
+                <option value="Box Model">Box Model</option>
+                <option value="layouts">Layout/Positioning</option>
+                <option value="tables">Nav Bar/Tables</option>
+                <option value="forms">Forms</option>
+                <option value="flask1">Flask Routes</option>
+                <option value="flask2">Flask Inheritance/Databases</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 {% endblock languages_content %}
