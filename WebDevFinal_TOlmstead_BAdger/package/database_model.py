@@ -24,5 +24,5 @@ class Posts(db.Model):
     owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
-        return "Posts: " + self.post + "\tOwner_id: " + str(self.owner_id)
+        return self.post
 

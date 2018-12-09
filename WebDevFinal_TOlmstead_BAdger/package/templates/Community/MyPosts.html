@@ -1,0 +1,19 @@
+{% extends "ParentTemplateHomePage.html" %}
+{% block home_style %}
+    <link href="../static/css/HomePageStyle.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block home_header %}
+    <h1 align="center">My Posts</h1>
+    {% if post_list %}
+        <table class="posts_table">
+            <tr>
+                <th align="center">{{ current_user.username }}</th>
+            </tr>
+            {% for post in post_list[::-1] %}
+                    <tr>
+                        <td align="center">{{ post }}</td>
+                    </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+{% endblock home_header %}

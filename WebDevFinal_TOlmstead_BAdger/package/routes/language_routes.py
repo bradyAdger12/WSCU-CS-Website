@@ -1,5 +1,4 @@
 from flask import render_template, redirect, request, url_for
-#from package.routes.lectures import *
 from package import app
 from flask_login import login_required
 

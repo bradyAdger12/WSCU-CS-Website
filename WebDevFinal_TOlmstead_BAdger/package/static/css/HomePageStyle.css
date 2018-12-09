@@ -50,19 +50,25 @@ nav ul li a:hover {
 .link1 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
 .link2 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
     border: solid black;
 }
 .link3 {
     display: table-cell;
     width: 1%;
-    padding-left: 6%;
+    padding-left: 3%;
+    border: solid black;
+}
+.link4 {
+    display: table-cell;
+    width: 1%;
+    padding-left: 2%;
     border: solid black;
 }
 .select {
@@ -84,9 +90,26 @@ input[type=submit] {
     margin-left: 40%;
 }
 
-
-
-
+#form_label {
+    color: white;
+    font-size: 250%;
+    margin-left: 44%;
+}
+.posts_table {
+    width: 50%;
+    margin-left: 25%;
+    border: solid black;
+}
+th{
+    font-size: 200%;
+    color: black;
+    border: solid black;
+}
+td {
+    font-size: 200%;
+    color: white;
+    border: solid black;
+}
 
 .dropdown {
     display: table-cell;
@@ -126,4 +149,10 @@ input[type=submit] {
 .dropdown:hover .dropdown-links {
     display: block;
     color: red;
+}
+.textArea {
+    margin-left: 25%;
+    width: 50%;
+    padding-bottom: 20%;
+    font-size: 200%;
 }
