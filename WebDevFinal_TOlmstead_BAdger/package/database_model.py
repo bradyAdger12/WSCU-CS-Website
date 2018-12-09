@@ -16,3 +16,6 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return "First Name: " + self.firstname + "  Last Name: " + self.lastname + "  Email: " + self.email + \
             "  Username: " + self.username + "  Password: " + self.password
+
+
+
