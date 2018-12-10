@@ -10,11 +10,13 @@
             <tr>
                 <th align="center">Date</th>
                 <th align="center">Post</th>
+                <th align="center">Delete Post</th>
             </tr>
             {% for post in post_list[::-1] %}
                     <tr>
                         <td align="center">{{ post.post_time.strftime('%b %d, %Y  %H:%M:%S') }}</td>
                         <td align="center">{{ post.post }}</td>
+                         <td align="center"><a href="/delete/{{post.id}}">delete</a></td>
                     </tr>
             {% endfor %}
         </table>
