@@ -164,3 +164,12 @@ def my_posts(id):
         post_list.append(posts)
         print(posts)
     return render_template("Community/MyPosts.html", post_list=post_list)
+
+@app.route('/delete/<id>')
+@login_required
+def delete_post(id):
+    deletePost = Posts.query.filter_by(id=id).first()
+    print(deletePost)
+    db.session.delete(deletePost)
+    db.session.commit()
+    return redirect(url_for("community"))

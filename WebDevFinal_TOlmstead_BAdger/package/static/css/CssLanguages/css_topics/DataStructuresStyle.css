@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+    background-color: #a71930;
 }
 nav {
     margin-left: -1%;
@@ -142,8 +142,8 @@ input {
     border: solid black;
 }
 img {
-    width: 600px;
-    height: 500px;
+    width: auto;
+    height: auto;
 }
 .cpp_ds_dropdown {
     margin-left: 15%;
@@ -156,9 +156,4 @@ img {
     /*border: solid white;*/
     width: 20%;
     margin-left: 40%;
-}
-input[type=submit] {
-    margin-left: 25%;
-    width: 50%;
-    font-size: 200%;
 }
