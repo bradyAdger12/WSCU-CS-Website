@@ -126,22 +126,31 @@ def account():
 @app.route('/community', methods=['GET', 'POST'])
 @login_required
 def community():
+    for u in User.query.filter_by(email=current_user.email):
+        postForm = PostsForm()
+        user = User.query.filter_by(id=u.id).first()
+        if postForm.validate_on_submit():
+            new_user_post = Posts(post=postForm.post.data)
+            new_user_post.user = user
+            db.session.add(new_user_post)
+            db.session.commit()
+            return redirect(url_for('community', postForm=postForm))
     if request.method == 'POST':
         print("Post validated.")
         form = request.form['select_post']
         if form == 'newPost':
-            for user in User.query.filter_by(email=current_user.email):
-                return redirect(url_for('new_post', id=user.id))
+            for user1 in User.query.filter_by(email=current_user.email):
+                return redirect(url_for('new_post', id=user1.id))
         elif form == 'myPosts':
-            for user in User.query.filter_by(email=current_user.email):
-                return redirect(url_for('my_posts', id=user.id))
+            for user1 in User.query.filter_by(email=current_user.email):
+                return redirect(url_for('my_posts', id=user1.id))
     posts_list = []
     user_list = []
     for posts in Posts.query.all():
         posts_list.append(posts)
     for users in User.query.all():
         user_list.append(users)
-    return render_template("Community/Community.html", posts_list=posts_list, user_list=user_list)
+    return render_template("Community/Community.html", posts_list=posts_list, user_list=user_list, postForm=postForm)
 @app.route('/new_post<id>', methods=['GET', 'POST'])
 @login_required
 def new_post(id):
