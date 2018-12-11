@@ -26,7 +26,7 @@ nav ul li a:visited {
 }
 nav ul li a:hover {
     font-size: 150%;
-    color: red;
+    color: #a71930;
     text-decoration: none;
 }
 #header {
@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 .account_info_outline {
     border: solid white;
-    background-color: red;
+    background-color: #a71930;
     margin-left: 35%;
     margin-bottom: 2%;
     width: 35%;
@@ -142,9 +142,9 @@ input[type=submit] {
 }
 .dropdown-links a:hover {
     color: white;
-    background-color: red;
+    background-color: #a71930;
 }
 .dropdown:hover .dropdown-links {
     display: block;
-    color: red;
+    color: #a71930;
 }

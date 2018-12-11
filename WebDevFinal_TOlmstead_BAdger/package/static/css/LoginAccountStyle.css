@@ -31,7 +31,7 @@ nav ul li a:visited {
 }
 nav ul li a:hover {
     font-size: 150%;
-    color: red;
+    color: #a71930;
     text-decoration: none;
 }
 .table {
@@ -57,7 +57,7 @@ nav ul li a:hover {
     border: solid black;
 }
 .form_div {
-    background-color: red;
+    background-color: #a71930;
     border: solid white;
     margin-top: 2.5%;/*  shift div down  */
     width: 45%;
