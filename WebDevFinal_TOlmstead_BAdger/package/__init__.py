@@ -14,3 +14,4 @@ login_manager.login_view = 'login'
 
 
 from package.routes import route, language_routes, dataStructureRoutes, lectures
+
